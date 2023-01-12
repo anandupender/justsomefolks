@@ -29,6 +29,7 @@ h1, h2, h3, h4{
     font-variant-ligatures: none;
     color: $primary-color;
     margin: 0;
+    font-weight: normal;
 }
 
 h1{
@@ -254,6 +255,14 @@ footer{
     }
     img{
         max-width: 400px;
+    }
+    nav{
+        width: calc(400px - #{$padding-large} * 2);
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
     .hero{
         max-width: 400px;
