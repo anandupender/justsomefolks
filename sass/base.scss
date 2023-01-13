@@ -245,6 +245,26 @@ footer{
     }
 }
 
+#desktop-only{
+    display: none;
+    position:fixed;
+    bottom: 20px;
+    width: 200px;
+    text-align: left;
+    right: calc((100vw - 400px) / 2 - 240px);
+    opacity: .4;
+    transition: opacity 300ms ease;
+    h4{
+        color: $white;
+        font-size: 16px;
+    }
+}
+#desktop-only:hover{
+    opacity: 1;
+}
+
+// Desktop View
+
 @media only screen and (min-width: 500px) {
     html{
         background-color: $black;
@@ -270,5 +290,8 @@ footer{
             max-width: 400px;
 
         }
+    }
+    #desktop-only{
+        display: block;
     }
 }

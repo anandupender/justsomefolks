@@ -111,24 +111,72 @@
         
     </footer>
 
+    <span id="desktop-only">
+        <h4>Hey you,<br/>
+            we built this for a phone,<br/>
+            but it works here too,<br/>
+            just not as well.
+        </h4>
+    </span>
+
     <style>
         @font-face {
             font-family: ExpositBlack;
-            src: url("fonts/EB.otf") format("opentype");
-        }
-        @font-face {
-            font-family: Inter, sans-serif;
-            src: url("fonts/Inter-Regular.otf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
+            src: url('fonts/EB.woff2') format('woff2'),
+            url('fonts/EB.woff') format('woff'),
+             url("fonts/EB.otf") format("opentype");
         }
 
         @font-face {
-            font-family: InterBold, sans-serif;
-            src: url("fonts/Inter-Bold.otf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
+            font-family: 'Inter';
+            font-style:  normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("fonts/Inter-Regular.woff2?v=3.19") format("woff2"),
+                url("fonts/Inter-Regular.woff?v=3.19") format("woff");
         }
+        @font-face {
+            font-family: 'Inter';
+            font-style:  italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("fonts/Inter-Italic.woff2?v=3.19") format("woff2"),
+                url("fonts/Inter-Italic.woff?v=3.19") format("woff");
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style:  normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url("fonts/Inter-Medium.woff2?v=3.19") format("woff2"),
+                url("fonts/Inter-Medium.woff?v=3.19") format("woff");
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style:  italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url("fonts/Inter-MediumItalic.woff2?v=3.19") format("woff2"),
+                url("fonts/Inter-MediumItalic.woff?v=3.19") format("woff");
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style:  normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url("fonts/Inter-ExtraBold.woff2?v=3.19") format("woff2"),
+                url("fonts/Inter-ExtraBold.woff?v=3.19") format("woff");
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style:  italic;
+            font-weight: 800;
+            font-display: swap;
+            src: url("fonts/Inter-ExtraBoldItalic.woff2?v=3.19") format("woff2"),
+                url("fonts/Inter-ExtraBoldItalic.woff?v=3.19") format("woff");
+        }
+       
         h1,h2,h3,h4{
             font-family: ExpositBlack;
             font-feature-settings:"ss01" on, "ss02" off, "ss03" on;
@@ -137,6 +185,7 @@
         }
         body{
             font-family: Inter;
+            font-weight: 500;
         }
     
     </style>

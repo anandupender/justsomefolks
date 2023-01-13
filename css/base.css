@@ -222,6 +222,25 @@ footer h2, footer h4 {
   color: #D0545C;
 }
 
+#desktop-only {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  width: 200px;
+  text-align: left;
+  right: calc((100vw - 400px) / 2 - 240px);
+  opacity: 0.4;
+  transition: opacity 300ms ease;
+}
+#desktop-only h4 {
+  color: #FAD8D3;
+  font-size: 16px;
+}
+
+#desktop-only:hover {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 500px) {
   html {
     background-color: #121212;
@@ -250,6 +269,10 @@ footer h2, footer h4 {
   }
   .hero img.logo {
     max-width: 400px;
+  }
+
+  #desktop-only {
+    display: block;
   }
 }
 
