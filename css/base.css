@@ -27,14 +27,19 @@ h1 {
 
 h2 {
   font-size: 44px;
+  line-height: 100%;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 h4 {
   font-size: 18px;
+}
+
+.outline {
+  text-shadow: -3px 3px 0 #FAD8D3, 3px 3px 0 #FAD8D3, 3px -3px 0 #FAD8D3, -3px -3px 0 #FAD8D3;
 }
 
 p {
@@ -84,6 +89,14 @@ a.white:visited {
   text-align: center;
 }
 
+.italic {
+  font-style: italic;
+}
+
+#dynamic {
+  text-decoration: underline;
+}
+
 section {
   padding: 0px 36px 0 36px;
   margin: 24px 0;
@@ -97,6 +110,18 @@ section {
 .p1 {
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.mb1 {
+  margin-bottom: 24px;
+}
+
+.mt1 {
+  margin-top: 32px;
+}
+
+.mt-1 {
+  margin-top: -32px;
 }
 
 .flex {
@@ -132,11 +157,11 @@ section {
   width: 100vw;
   position: relative;
 }
-.hero img {
-  width: 100vw;
-  object-fit: cover;
+.hero video {
+  width: 100%;
 }
 .hero img.logo {
+  object-fit: cover;
   width: 80%;
   top: 180px;
   position: absolute;
@@ -173,12 +198,11 @@ img {
 }
 
 img.small {
-  width: 100%;
+  width: 48px;
   object-fit: cover;
-  border: 2px #121212 solid;
 }
 
-button {
+.button, button {
   font-family: ExpositBlack;
   font-feature-settings: "ss01" on, "ss02" off, "ss03" on;
   font-variant-ligatures: none;
@@ -189,6 +213,11 @@ button {
   border: none;
   width: 100%;
   margin: 18px 0;
+  text-align: center;
+}
+
+.button {
+  width: auto;
 }
 
 .bt1 {
@@ -199,6 +228,11 @@ button {
 .bt2 {
   background-color: #FAD8D3;
   color: #4D2DA9;
+}
+
+a, a:visited {
+  color: #FAD8D3;
+  text-decoration: none;
 }
 
 .mt1 {

@@ -41,7 +41,11 @@
     </nav>
 
     <div class="hero">
-        <img src="img/hero.jpeg" alt="">
+        <!-- <img src="img/hero.jpeg" alt=""> -->
+        <video loop autoplay>
+            <source src="img/food.MP4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
         <img src="img/logo.svg" class="logo animate__animated animate__fadeInDown" alt="">
     </div>
 
@@ -50,17 +54,19 @@
     </section>
 
     <section class="bg-purple p1">
-        <p class="white center">no future events planned we’re probably recipe testing</p>
+        <h3 class="white center">no future events planned</h3>
+        <p class="white center italic">We’re probably...</p>
+        <div class="white center" id="dynamic">recipe testing</div>
         <button class="bt1">Join the Waitlist</button>
     </section>
 
     <img src="img/team1.jpeg" alt="">
 
-    <section>
-        <h2 class="red">We Host</h2>
-        <h3 class="red">...2-3 events per month, at SF bars, restaurants, and community spaces.</h3>
+    <section class="mt-1">
+        <h2 class="red outline">We Host</h2>
+        <h3 class="red mb1">...2-3 events per month, at SF bars, restaurants, and community spaces.</h3>
         <p class="red">Tickets available in the bio of our</p>
-        <button class="bt1">Instagraaaaam</button>
+        <a class="button bt1" target="_blank" href="https://www.instagram.com/justsomefolks.sf/">Instagraaaaam</a>
     </section>
 
     <img src="img/team1.jpeg" alt="">
@@ -71,9 +77,10 @@
         <button class="bt1">Email</button>
     </section>
 
-    <section>
+    <section class="mt1 flex h-center col">
         <h3 class="red center">Still there?</h3>
         <h2 class="center">Dive Under the hood with us</h2>
+        <img src="img/arrow.svg" class="small mt2">
     </section>
 
    <!-- Arrow -->
@@ -98,14 +105,14 @@
         </section>
         <img src="img/team1.jpeg" alt="">
         <section>
-            <button class="bt2">See more on instagram</button>
+            <a class="button bt1" target="_blank" href="https://www.instagram.com/justsomefolks.sf/">See more on Instagram</a>
         </section>
-
 
    </div>
 
     <footer>
-        <h2 class="red">Thank you</h2>
+        <h4 class="red">...and lastly,</h4>
+        <h2 class="red">Thank you!</h2>
         <h4>to the magnificent</h4>
         <h4 class="justify">Aditya, Alex, Alvaro, Armelle, Chandler, Chloe, Daniel, Eesha, Emma, Evan, Grace, Griffin, Jay, Jonny, Julia, Karoun, Lisa, Nathan,   Paolo,   Shantanu,  Yash.</h4>
         
@@ -187,6 +194,8 @@
         }
     
     </style>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>

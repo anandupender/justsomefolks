@@ -38,14 +38,21 @@ h1{
 
 h2{
     font-size: 44px;
+    line-height: 100%;
 }
 
 h3{
-    font-size: 28px;
+    font-size: 32px;
 }
 
 h4{
     font-size: 18px;
+}
+.outline{
+    text-shadow: -3px 3px 0 $white,
+				  3px 3px 0 $white,
+				 3px -3px 0 $white,
+				-3px -3px 0 $white;
 }
 p{
     font-size: 18px;
@@ -95,6 +102,14 @@ a.white:visited{
     text-align: center;
 }
 
+.italic{
+    font-style: italic;
+}
+
+#dynamic{
+    text-decoration: underline;
+}
+
 // Sections
 
 section{
@@ -110,6 +125,18 @@ section{
 .p1{
     padding-top: 48px;
     padding-bottom: 48px;
+}
+
+.mb1{
+    margin-bottom: 24px;
+}
+
+.mt1{
+    margin-top: 32px;
+}
+
+.mt-1{
+    margin-top: -32px;
 }
 
 // flex
@@ -146,11 +173,15 @@ section{
 .hero{
     width: 100vw;
     position: relative;
-    img{
-        width: 100vw;
-        object-fit: cover;
+    // img{
+    //     width: 100vw;
+    //     object-fit: cover;
+    // }
+    video{
+        width: 100%;
     }
     img.logo{
+        object-fit: cover;
         width: 80%;
         top: 180px;
         position: absolute;
@@ -190,13 +221,12 @@ img{
 }
 
 img.small{
-    width:100%;
+    width:48px;
     object-fit: cover;
-    border: 2px $black solid;
 }
 
 // Buttons
-button{
+.button, button{
     font-family: ExpositBlack;
     font-feature-settings:"ss01" on, "ss02" off, "ss03" on;
     font-variant-ligatures: none;
@@ -207,6 +237,10 @@ button{
     border: none;
     width: 100%;
     margin: 18px 0;
+    text-align: center;
+}
+.button{
+    width: auto;
 }
 .bt1{
     background-color: $secondary-color;
@@ -219,6 +253,11 @@ button{
 
 button:hover{
 
+}
+
+a,a:visited{
+    color: $white;
+    text-decoration: none;
 }
 
 
