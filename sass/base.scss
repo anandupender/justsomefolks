@@ -48,6 +48,7 @@ h3{
 h4{
     font-size: 18px;
 }
+
 .outline{
     text-shadow: -3px 3px 0 $white,
 				  3px 3px 0 $white,
@@ -126,9 +127,16 @@ section{
     padding-top: 48px;
     padding-bottom: 48px;
 }
+.mb0{
+    margin-bottom: -4px;
+}
 
 .mb1{
     margin-bottom: 24px;
+}
+
+.mt0{
+    margin-top: -4px;
 }
 
 .mt1{
@@ -178,7 +186,8 @@ section{
     //     object-fit: cover;
     // }
     video{
-        width: 100%;
+        width: 0;
+        opacity: 0;
     }
     img.logo{
         object-fit: cover;
@@ -222,6 +231,12 @@ img{
 
 img.small{
     width:48px;
+    object-fit: cover;
+}
+
+img.square{
+    width:100vw;
+    height: 100vw;
     object-fit: cover;
 }
 
@@ -315,6 +330,10 @@ footer{
     img{
         max-width: 400px;
     }
+    img.square{
+        width:400px;
+        height: 400px;
+    }    
     nav{
         width: calc(400px - #{$padding-large} * 2);
         margin-left: auto;
