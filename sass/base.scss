@@ -181,13 +181,21 @@ section{
 .hero{
     width: 100vw;
     position: relative;
-    // img{
-    //     width: 100vw;
-    //     object-fit: cover;
-    // }
+    max-height: 90vh;
     video{
         width: 0;
         opacity: 0;
+        max-height: calc(90vh - 4px);
+        object-fit: cover;
+    }
+    #videoFilter{
+        background-color: #4D2DA9;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: .4;
+        height: calc(100% - 4px);
+        mix-blend-mode: hard-light;
     }
     img.logo{
         object-fit: cover;
@@ -196,7 +204,29 @@ section{
         position: absolute;
         left: 10%;
     }
+    #instagram{
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+        background-color: $white;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        animation: rotate 8s infinite forwards linear;
+    }
 }
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 // Nav
 nav{
@@ -247,7 +277,7 @@ img.square{
     font-variant-ligatures: none;
     display: block;
     padding:14px 26px 14px 16px;
-    font-size: 28px;
+    font-size: 22px;
     border-radius: 36px;
     border: none;
     width: 100%;
@@ -263,7 +293,7 @@ img.square{
 }
 .bt2{
     background-color: $white;
-    color: $primary-color;
+    color: $primary-color !important;
 }
 
 button:hover{
