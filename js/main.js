@@ -24,3 +24,4 @@ video.addEventListener('canplay', (event) => {
   video.style.opacity = "1";
   video.style.width = "100%";
 });
+

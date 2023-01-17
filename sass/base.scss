@@ -111,10 +111,6 @@ a.white:visited{
     font-style: italic;
 }
 
-#dynamic{
-    text-decoration: underline;
-}
-
 // Sections
 
 section{
@@ -127,9 +123,17 @@ section{
     background-color: $primary-color;
 }
 
+.bg-red{
+    background-color: $secondary-color;
+}
+
 .p1{
     padding-top: 48px;
     padding-bottom: 48px;
+}
+.p2{
+    padding-top: 12px;
+    padding-bottom: 32px;
 }
 .mb0{
     margin-bottom: -4px;
@@ -341,6 +345,23 @@ input{
     max-width: 60%;
     margin: 0 !important;
     text-align: left;
+}
+
+input::placeholder{
+    opacity: .7;
+    font-size: 20px;
+}
+
+input.submit{
+    border-radius: 50%;
+    background-image: url("/img/arrow2.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+input.email{
+    border-color: $white;
 }
 
 a,a:visited{

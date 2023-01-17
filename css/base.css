@@ -97,10 +97,6 @@ a.white:visited {
   font-style: italic;
 }
 
-#dynamic {
-  text-decoration: underline;
-}
-
 section {
   padding: 0px 36px 0 36px;
   margin: 24px 0;
@@ -111,9 +107,18 @@ section {
   background-color: #4D2DA9;
 }
 
+.bg-red {
+  background-color: #D0545C;
+}
+
 .p1 {
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.p2 {
+  padding-top: 12px;
+  padding-bottom: 32px;
 }
 
 .mb0 {
@@ -319,6 +324,23 @@ input {
   max-width: 60%;
   margin: 0 !important;
   text-align: left;
+}
+
+input::placeholder {
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+input.submit {
+  border-radius: 50%;
+  background-image: url("/img/arrow2.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+input.email {
+  border-color: #FAD8D3;
 }
 
 a, a:visited {
