@@ -268,7 +268,7 @@ img {
 }
 
 img.small {
-  width: 48px;
+  width: 60px;
   object-fit: cover;
 }
 
