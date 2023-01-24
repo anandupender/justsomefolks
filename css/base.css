@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  font-family: ExpositBlack;
+  font-family: ExpositBlack, sans-serif;
   font-feature-settings: "ss01" on, "ss02" off, "ss03" on;
   font-variant-ligatures: none;
   color: #121212;
@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: ExpositBlack;
+  font-family: ExpositBlack, sans-serif;
   font-feature-settings: "ss01" on, "ss02" off, "ss03" on;
   font-variant-ligatures: none;
   color: #4D2DA9;

@@ -11,7 +11,7 @@ html,body{
 }
 
 body{
-    font-family: ExpositBlack;
+    font-family: ExpositBlack, sans-serif;
     font-feature-settings:"ss01" on, "ss02" off, "ss03" on;
     font-variant-ligatures: none;
     color: $black;
@@ -24,7 +24,7 @@ body{
 // TYPOGRAPHY
 
 h1, h2, h3, h4{
-    font-family: ExpositBlack;
+    font-family: ExpositBlack, sans-serif;
     font-feature-settings:"ss01" on, "ss02" off, "ss03" on;
     font-variant-ligatures: none;
     color: $primary-color;
